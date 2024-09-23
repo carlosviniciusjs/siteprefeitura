@@ -1,0 +1,274 @@
+<!--Site criado para testar meus conhecimentos em HTML e CSS, recriei o site da prefeitura da minha cidade usando meus conhecimentos e adaptando ao meu estilo-->
+<!--Website created to test my knowledge in HTML and CSS. I recreated my city's municipal website using my skills and adapting it to my style.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = () => {
+        function addHoverEffect() {
+            const listItems = document.querySelectorAll('#acessorapidobranco li');
+
+       
+            listItems.forEach(function(item) {
+                item.addEventListener('mouseover', function() {
+                    item.classList.add('menus');
+                });
+
+                item.addEventListener('mouseout', function() {
+                    item.classList.remove('menus');
+                });
+            });
+        }
+
+        addHoverEffect();
+    }
+</script>
+<body>
+<body>
+
+    <conteiner>
+        <header> 
+            <img class="imagemlogo" src="/img/Logo topo.png">
+            <div class="social">
+               <ul>
+                     <li><img src="/img/face.png" style="width: 30px; height: 30px;"> Facebook </li>
+                     <li><img src="/img/insta.png" style="width: 30px; height: 30px;"> Instageam </li>
+                </ul>
+            </div>
+        </header>
+
+       <div class="menusuperior">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#">GOVERNO E SECRETARIA</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Estrutura Organizacional</a></li>
+                        <li><a href="#">Secretaria de Agricutura</a></li>
+                        <li><a href="#">Secretaria de Educação</a></li>
+                        <li><a href="#">Secretaria de Educação</a></li>
+                        <li><a href="#">Secretaria de Habitação</a></li>
+                        <li><a href="#">Secretaria de Meio Ambiente</a></li>
+                        <li><a href="#">Secretaria de Educação</a></li>
+			            <li><a href="#">Secretaria de Promoção Social</a></li>
+                        <li><a href="#">Superintendência Muncipal de Transito</a></li>
+                        <li><a href="#">Gabinete do Prefeito</a></li>
+			            <li><a href="#">Secretaria de Casa Civil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">ACESSO A INFORMAÇÃO</a></li>
+                <li><a href="#">NOTÍCIAS</a></li>
+                <li class="dropdown">
+                    <a href="#">SOBRE A CIDADE</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">História da Cidade</a></li>
+                        <li><a href="#">Logotipos</a></li>
+                        <li><a href="#">Galeria de Fotos</a></li>
+                        <li><a href="#">Simbolos Municipais</a></li>
+                        <li><a href="#">Econômia</a></li>
+                        <li><a href="#">Galeria de Videos</a></li>
+                        <li><a href="#">Hino de Goianésia</a></li>
+			            <li><a href="#">Geoprocessamento</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FALE CONOSCO</a></li>
+            
+            </ul>
+       </div>
+
+       
+        <div class="menutopo">
+            <h3> O que você procura?</h3>
+            <div class="search-container">
+                
+                <input type="text" id="search" placeholder="Digite aqui...">
+                <button type="button" id="search-button">
+                    <img src="./img/lupa.png" style="width: 20px; height:20px">
+                </button>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-8">
+                    <ul id="imagemacessorapido">
+                        <li><a href="#"><img class="imganuncios" src="/img/comunicado.jpeg"  style="width: 200px; height:100px"></a></li>
+                        <li><a href="#"><img class="imganuncios" src="/img/notas fiscais.png" style="width: 200px; height:100px"></a></li>
+                        <li><a href="#"><img class="imganuncios" src="/img/iptu.png" style="width: 200px; height:100px"></a></li>
+                    </ul>
+
+                    <ul id="imagemacessorapidocel">
+                        <li><a href="#"><img class="imganuncios" src="/img/comunicado.jpeg"></a></li>
+                        <li><a href="#"><img class="imganuncios" src="/img/notas fiscais.png"></a></li>
+                        <li><a href="#"><img class="imganuncios" src="/img/iptu.png"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul id="acessorapidoverde">
+                        <li><a href="#">PORTAL DE SERVIÇOS</a></li>
+                        <li><a href="#">PORTAL DA TRANSPARÊNCIA</a></li>
+                        <li><a href="#">GOVERNO E SECRETARIAS</a></li>
+                        <li><a href="#">OUVIDORIA E SIC</a></li>
+                        <li><a href="#">PLANO ANUAL DE CONTRATAÇÕES</a></li>
+                        <li><a href="#">GEOPROCESSAMENTO</a></li>
+                    </ul>
+
+                    <ul id="acessorapidobranco">
+                        <h3>Mais Acessados</h3>
+                        <li><a href="#">Combate ao Coronavírus</a></li>
+                        <li><a href="#">Empresas e Contribuintes</a></li>
+                        <li><a href="#">Editais e Publicações</a></li>
+                        <li><a href="#">Nota Fiscal Eletrônica</a></li>
+                        <li><a href="#">IPTU</a></li>
+                        <li><a href="#">Consultar Processos</a></li>
+                        <li><a href="#">Webmail</a></li>
+                        <li><a href="#">Solicitações Diversas</a></li>
+                        <li><a href="#">Escola .NET</a></li>
+                        <li><a href="#">Licitações</a></li>
+                        <li><a href="#">Contratos</a></li>
+                        <li><a href="#">Concursos</a></li>
+                        <li><a href="#">Banco do Empreendedor</a></li>
+                        <li><a href="#">Telefones Úteis</a></li>
+                        <li><a href="#">Servidor</a></li>
+                        <li><a href="#">Boletim Ambiental</a></li>
+                        <li id="todosserv"><a href="#">Ver todos os serviços</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="videosbot">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="playlistvideos">
+                        <ul>
+                            <li><img class="imganuncios" src="/img/framevid/DiadoSurdo.png"  style="width: 50x; height:50px"> 26 de Setembro - Dia Nacional do Surdo</li>
+                            <li><img class="imganuncios" src="/img/framevid/GRF3.png"  style="width: 50x; height:50px"> 3⁰ Dia - Goianésia Rodeio Festival</li>
+                            <li><img class="imganuncios" src="/img/framevid/GRF3.png"  style="width: 50x; height:50px"> 2⁰ Dia - Goianésia Rodeio Festival</li>
+                            <li><img class="imganuncios" src="/img/framevid/GRF3.png"  style="width: 50x; height:50px"> 1⁰ Dia - Goianésia Rodeio Festival</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div id="videodestak">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XxHWQ_ACDLo?si=D8zv2_CvVvJ4-Scg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div id="videodestakcel">
+                        <iframe width="450" height="250" src="https://www.youtube.com/embed/XxHWQ_ACDLo?si=D8zv2_CvVvJ4-Scg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+        <section class="conthist">
+            <div class="hist-container">
+                <figure class="histimg">
+                    <img class="imganuncios" src="/img/cidade.png" alt="Imagem da cidade de Goianésia" style="width: 100%; height:auto;">
+                </figure>
+        
+                <article class="hist">
+                    <h6>Goianésia</h6>
+                    <h1>História da Cidade</h1>
+                    <p>O território do município de Goianésia originou das fazendas: Calção de Couro, São Bento, Itája e parte da Lavrinha de São Sebastião. A fazenda Calção de Couro teve suas terras divididas entre vários compradores e dentre eles, o mineiro Laurentino Martins Rodrigues que, nominou sua gleba de, fazenda Laranjeiras. Mudou para fazenda com sua família, ergueu às margens do córrego ...</p>
+                    <a href="#"><p class="leiamais">CONTINUE LENDO</p></a>
+                </article>
+            </div>
+        </section>
+
+        <div id="rodape">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="imagemlogo" src="/img/Logo topo.png">
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>FALE CONOSCO</h6>
+                        <ul>
+                            <li>Telefone:(62) 3389-9400</li>
+                            <li>prefeitura@goianesia.go.gov.br</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>ENDEREÇO</h6>
+                        <ul>
+                            <li>Rua 33 nº 453 - Praça Cívica.</li>
+                            <li>Goianésia-GO, 76382-205</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="socialrodape">
+                            <h7>Redes Sociais</h7>
+                            <ul>
+                                <li><img src="/img/face.png" style="width: 30px; height: 30px;"></li>
+                                <li><img src="/img/insta.png" style="width: 30px; height: 30px;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6>SERVIÇOS AOS CIDADÃOS</h6>
+                        <ul>
+                            <li>Por Categoria</li>
+                            <li>Por Interessado</li>
+                            <li>Telefones Úteis</li>
+                            <li>Consultar CEP</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>ESTRUTURA DE GOVERNO</h6>
+                        <ul>
+                            <li>Prefeito</li>
+                            <li>Prefeitura</li>
+                            <li>Secretarias</li>
+                            <li>Outros Órgãos</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>PORTAL DA TRANSPARÊNCIA</h6>
+                        <ul>
+                            <li>Responsabilidade Fiscal</li>
+                            <li>Despesas e Receitas</li>
+                            <li>Acesso à Informação</li>
+                            <li>Recursos Humanos</li>
+                            <li>Memória de Cálculo LOA 2017</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>OUVIDORIA E ATENDIMENTO</h6>
+                        <ul>
+                            <li>Fale Conosco</li>
+                            <li>Ouvidoria Geral</li>
+                            <li>Serviços de Informação</li>
+                            <li>Perguntas Frequentes</li>
+                            <li>Política de Privaciade</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+
+
+
+
+
+    </conteiner>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

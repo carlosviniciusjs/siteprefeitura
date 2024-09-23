@@ -1,0 +1,537 @@
+
+
+
+header {
+    background-color: rgb(13, 7, 47);
+    display: flex;
+    height: 100px;
+    justify-content: space-between; /* Espaça logo e redes sociais */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 0 20px; /* Adiciona um pouco de padding para o espaçamento interno */
+    padding-left: 100px;
+}
+
+
+.social > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+
+.social > ul > li {
+    margin-left: 10px; /* Espaço entre os itens da lista */
+}
+
+.menusuperior{
+    display: block;
+}
+.menusuperior > ul{
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.menusuperior > ul > li{
+    padding-right: 10px;
+    
+}
+
+.menusuperior > ul > li [href]{
+    color:rgb(8, 0, 56);
+    font-weight: bold;
+}
+
+.menusuperior > ul > li > a {
+    color:rgb(8, 0, 56);
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: block; /* Faz com que o link ocupe o bloco do item da lista */
+    padding: 10px; /* Adiciona um pouco de padding ao redor do link para aumentar a área clicável */
+}
+
+.menusuperior > ul > li :hover{
+    color: green;
+}
+
+.menusuperior ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menusuperior li {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+.menusuperior a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.menusuperior a:hover {
+    color: #007BFF;
+}
+.menusuperior ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menusuperior li {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+.menusuperior a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.menusuperior a:hover {
+    color: #007BFF;
+}
+.menusuperior ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menusuperior li {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+.menusuperior a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.menusuperior a:hover {
+    color: #007BFF;
+}
+
+.menusuperior ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menusuperior li {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+.menusuperior a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.menusuperior a:hover {
+    color: #007BFF;
+}
+
+.menusuperior ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menusuperior li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menusuperior a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+.menusuperior a:hover {
+    color: #007BFF;
+}
+
+/*dropwown*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+
+/*searcher*/
+
+
+.search-container {
+    display: flex;
+    border-radius: 4px;
+    width: 33%; /* Define a largura do contêiner como 33% da largura da tela */
+    align-items: center;
+    position: absolute;
+    padding-top: 125px;
+}
+
+.menutopo h3{
+    position: relative;
+    
+}
+
+#search {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+    border: none;
+    padding: 0; /* Remove o padding padrão */
+    botton: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    background-color: white ;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Ajustado para dar mais espaço à imagem */
+    height: 44px;
+}
+
+#videodestakcel{
+    display: none
+}
+
+#search-button img {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+}
+
+
+.menutopo {
+    background-image: url(./img/ir-header.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir o elemento */
+    height: 150px; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo dentro do elemento */
+}
+
+#imagemacessorapido{
+    list-style: none;
+    display: flex;
+}
+
+#imagemacessorapido li{
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+#imagemacessorapidocel{
+    display: none;
+}
+
+#acessorapidoverde{
+    margin-top: 50px;
+    background-color: green;
+    list-style: none;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#acessorapidoverde [href]{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#acessorapidoverde :hover{
+    color: white;
+    text-decoration:underline;
+    display: block;
+}
+
+#acessorapidoverde li{
+    text-align: left;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+#acessorapidobranco{
+    margin-top: 50px;
+    list-style: none;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+
+#acessorapidobranco [href]{
+    color: gray;
+    text-decoration: none;
+    display: block;
+}
+
+#acessorapidobranco li{
+    text-align: left;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+
+.menus{
+    border: 1px solid green;
+}
+
+.videosbot{
+    background-color: #333;
+    padding-top: 50px;
+}
+
+.playlistvideos{
+
+    color: white;
+    text-align: left;
+}
+
+.playlistvideos ul{
+    font-weight: bold;
+    list-style: none;
+    padding-left: 10px;
+
+
+}
+
+
+.playlistvideos li{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(82, 82, 82);
+
+}
+
+.playlistvideos li:hover {
+
+    color: green;
+    
+}
+
+.conthist {
+    background-color: #b2b2b2;
+    padding: 20px;
+}
+
+.hist-container {
+    display: flex;
+    align-items: left; /* Alinha a imagem e o texto ao topo */
+    margin: 0;
+}
+
+.histimg {
+    flex: 1;
+    text-align: left;
+
+}
+
+.hist {
+    flex: 1;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+
+.hist h1{
+    font-weight: bold;
+}
+
+.hist h6{
+    color: green;
+}
+
+.hist p {
+    padding-top: 10px;
+    margin: 10px 0;
+}
+
+.leiamais{
+    background-color: green;
+    color:#ffffff;
+    width: 170px;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 9px;
+    text-decoration: none;
+
+
+    
+}
+
+
+#rodape{
+    background-color: rgb(2, 2, 62);
+    padding-top: 20px;
+}
+
+#rodape li{
+    color: white;
+}
+
+#rodape h6{
+    color: green;
+    font-weight: bold;
+}
+
+#rodape h7{
+    color: green;
+}
+
+#rodape ul li{
+    list-style: none;
+}
+
+#socialrodape ul li{
+    display: inline-flex;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social > ul {
+        display: none;
+    }
+
+    .menusuperior{
+        display: none;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        display: block; /* Exibe o dropdown sempre visível em telas menores */
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        padding-top: 20px;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hist-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hist, .histimg {
+        width: 100%;
+        margin: 0;
+    }
+
+    .playlistvideos{
+        padding-left: 0;
+        margin: 10px;
+    }
+
+    #videodestak{
+        display: none;
+    }
+
+    #videodestakcel{
+        display: block;
+    }
+
+    #imagemacessorapido{
+        display: none;
+    }
+
+    #imagemacessorapidocel, #acessorapidoverde, #acessorapidobranco {
+        display: block;
+        text-align: center;
+        width: 100%;
+        list-style: none;
+
+    }
+
+    #imagemacessorapidocel li, #acessorapidoverde li, #acessorapidobranco li {
+        padding-right: 0;
+        margin: 10px auto;
+        padding-top: 5px;
+    }
+
+
+    #socialrodape ul li {
+        display: inline-block;
+        padding-top: 10px;
+        padding-right: 5px;
+    }
+}
+
