@@ -249,7 +249,7 @@ header {
 
 
 .menutopo {
-    background-image: url(./img/ir-header.png);
+    background-image: url(https://github.com/carlosviniciusjs/siteprefeitura/blob/img/ir-header.png?raw=true);
     background-repeat: no-repeat;
     background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir o elemento */
     height: 150px; /* Ajuste conforme necessário */
